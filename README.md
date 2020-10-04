@@ -3,7 +3,7 @@
 ## Project in a nutshell
 The idea in this project was to find out the most common news topics according to the only true media authority: YLE Teksti-tv
 
-To cut the chase, go directly to [Results section](https://github.com/vkolehmainen/mista-puhutaan#results) and check out the wordclouds.
+To cut the chase, go directly to [Results](https://github.com/vkolehmainen/mista-puhutaan#results) section and check out the wordclouds.
 
 ## Data
 
@@ -32,21 +32,15 @@ The last step was done since tesseract performs better on black text with white 
 
 ### Bag-of-words
 
-## Word frequencies and TF-IDF
+## Word frequencies
 
 ## Results
 
 ### Wordclouds
 
+A wordcloud is an illustration for word frequencies in a given text document. The larger the font for a given word, the more appearances it has throughout the document. In this case one document entails all Teksti-tv front pages from a given year.
+
+Below there is an example word cloud from the year 2009:
 ![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2009.png "2009")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2010.png "2010")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2011.png "2011")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2012.png "2012")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2013.png "2013")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2014.png "2014")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2015.png "2015")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2016.png "2016")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2017.png "2017")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2018.png "2018")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2019.png "2019")
-![alt text](https://github.com/vkolehmainen/mista-puhutaan/blob/master/figures/wordclouds/wordcloud_2020.png "2020")
+
+See all wordclouds in: https://imgur.com/a/dZJ26vw or directly in this repository: [figures/wordclouds](https://github.com/vkolehmainen/mista-puhutaan/tree/master/figures/wordclouds)
