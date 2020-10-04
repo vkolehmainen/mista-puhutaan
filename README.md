@@ -1,4 +1,4 @@
-# Teletext (Teksti-tv) frontpage topical analysis 2009-2020
+# Mistä puhutaan?: YLE Teksti-tv frontpage topical analysis 2009-2020
 
 ## Project in a nutshell
 The idea in this project was to find out the most common news topics per year according to the only true media authority: [YLE Teksti-tv](https://yle.fi/aihe/tekstitv)
@@ -17,7 +17,7 @@ The teletext front page for each was date from 21.04.2009 to 17.03.2020 was craw
 For example, the teletext front page from 01.01.2020 at 12.00 can be fetched from the following URL:
 https://rtva.kavi.fi/teletext/page/choose/thisDate/date/01-01-2020/time/12:00:00/page/100/network/6/subpage/1
 
-See crawler.py for details.
+See [crawler.py](https://github.com/vkolehmainen/mista-puhutaan/blob/master/crawler.py) for details.
 
 ## Pre-processing
 
@@ -41,11 +41,11 @@ After the steps mentioned above we go from the raw image on the left to the prep
 ### Sentence and word pre-processing
 
 Tesseract returns the text it finds in a string where the arrangement of the text is preserved. For example, two news headlines on separate lines would be returned as:  
-'Imatralla paloi rengasvarasto  
-Puolueiden vastattava Kataiselle'
+> 'Imatralla paloi rengasvarasto  
+> Puolueiden vastattava Kataiselle'
 
 data_preprocessor.py transforms the raw text data from the above format to a list of lists like this:
-[['imatra', 'palaa', 'rengasvarasto'], ['puolue', 'vastata', 'katainen']]
+> [['imatra', 'palaa', 'rengasvarasto'], ['puolue', 'vastata', 'katainen']]
 
 Each word is transformed into lowercase and unwanted symbols (e.g. !,?,%) are removed. In addition, words which are recognized as proper Finnish words are [stemmed](https://en.wikipedia.org/wiki/Stemming) to their basic form using language analyzing library [Voikko](https://pypi.org/project/voikko/). For example, in the above case word 'Imatralla' was transformed into 'imatra'.
 
